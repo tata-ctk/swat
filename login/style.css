@@ -1,0 +1,276 @@
+.div,
+.div * {
+  box-sizing: border-box;
+}
+.div {
+  background: #ededed;
+  height: 1100px;
+  position: relative;
+}
+.login-1 {
+  background: var(--grey-50, #fafafa);
+  border-radius: 12px;
+  width: 1440px;
+  height: 900px;
+  position: absolute;
+  left: 100px;
+  top: 100px;
+  box-shadow: var(--shadow-sm-box-shadow, 0px 1px 3px 0px rgba(0, 0, 0, 0.16));
+  overflow: hidden;
+}
+.card {
+  background: var(--white, #ffffff);
+  border-radius: 16px;
+  padding: var(--space-12, 48px);
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 514px;
+  position: absolute;
+  left: 50%;
+  translate: -50% -50%;
+  top: 50%;
+  box-shadow: var(
+    --border-border-card-box-shadow,
+    0px 0px 0px 1px rgba(236, 236, 238, 1),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.06)
+  );
+  overflow: hidden;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.swat {
+  color: var(--grey-900, #171717);
+  text-align: center;
+  font-family: var(
+    --dm-sans-2xl-24px-bold-font-family,
+    "Inter-Bold",
+    sans-serif
+  );
+  font-size: var(--dm-sans-2xl-24px-bold-font-size, 24px);
+  line-height: var(--dm-sans-2xl-24px-bold-line-height, 32px);
+  font-weight: var(--dm-sans-2xl-24px-bold-font-weight, 700);
+  position: relative;
+  align-self: stretch;
+}
+.sign-in {
+  color: var(--grey-900, #171717);
+  text-align: center;
+  font-family: var(
+    --dm-sans-2xl-24px-bold-font-family,
+    "Inter-Bold",
+    sans-serif
+  );
+  font-size: var(--dm-sans-2xl-24px-bold-font-size, 24px);
+  line-height: var(--dm-sans-2xl-24px-bold-line-height, 32px);
+  font-weight: var(--dm-sans-2xl-24px-bold-font-weight, 700);
+  position: relative;
+  align-self: stretch;
+}
+.container2 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.fields {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.label {
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.label2 {
+  color: var(--grey-900, #171717);
+  text-align: left;
+  font-family: var(
+    --dm-sans-sm-14px-medium-font-family,
+    "Inter-Medium",
+    sans-serif
+  );
+  font-size: var(--dm-sans-sm-14px-medium-font-size, 14px);
+  line-height: var(--dm-sans-sm-14px-medium-line-height, 20px);
+  font-weight: var(--dm-sans-sm-14px-medium-font-weight, 500);
+  position: relative;
+}
+.required {
+  color: var(--danger-600, #dc2626);
+  text-align: left;
+  font-family: var(--font-text-font-body, "Inter-Medium", sans-serif);
+  font-size: var(--size-text-xs, 12px);
+  line-height: var(--line-height-leading-5, 20px);
+  font-weight: var(--weight-font-medium, 500);
+  position: relative;
+}
+.input {
+  background: var(--white, #ffffff);
+  border-radius: 8px;
+  padding: 7px 14px 7px 14px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 38px;
+  position: relative;
+  box-shadow: var(
+    --border-border-input-box-shadow,
+    0px 0px 0px 1px rgba(229, 229, 229, 1),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.06)
+  );
+  overflow: hidden;
+}
+.text {
+  color: var(--grey-900, #171717);
+  text-align: left;
+  font-family: var(--font-text-font-body, "Inter-Regular", sans-serif);
+  font-size: var(--size-text-sm, 14px);
+  line-height: var(--line-height-leading-6, 24px);
+  font-weight: var(--weight-font-normal, 400);
+  position: relative;
+  flex: 1;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.button {
+  background: var(--white, #ffffff);
+  border-style: solid;
+  border-color: var(--grey-200, #e5e5e5);
+  border-width: 0px 0px 0px 1px;
+  padding: 7px 0px 7px 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  height: 38px;
+  position: relative;
+}
+.eye {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: visible;
+}
+.field-radio-checkbox-list-default {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.container3 {
+  padding: 2px 0px 0px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.field-radio-checkbox-icon {
+  background: var(--primary-600, #d97706);
+  border-radius: 4px;
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  box-shadow: var(
+    --shadow-xs-box-shadow,
+    0px 0.5px 2px 0px rgba(0, 0, 0, 0.05)
+  );
+  overflow: hidden;
+}
+.icon {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+.container4 {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 87px;
+  position: relative;
+}
+.text2 {
+  color: var(--grey-950, #0a0a0a);
+  text-align: left;
+  font-family: var(
+    --dm-sans-sm-14px-medium-font-family,
+    "Inter-Medium",
+    sans-serif
+  );
+  font-size: var(--dm-sans-sm-14px-medium-font-size, 14px);
+  line-height: var(--dm-sans-sm-14px-medium-line-height, 20px);
+  font-weight: var(--dm-sans-sm-14px-medium-font-weight, 500);
+  position: relative;
+}
+.button2 {
+  background: var(--primary-600, #d97706);
+  border-radius: 8px;
+  padding: 8px 16px 8px 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  box-shadow: var(
+    --shadow-xs-box-shadow,
+    0px 0.5px 2px 0px rgba(0, 0, 0, 0.05)
+  );
+}
+.button3 {
+  color: var(--white, #ffffff);
+  text-align: center;
+  font-family: var(--font-text-font-body, "Inter-SemiBold", sans-serif);
+  font-size: var(--size-text-sm, 14px);
+  line-height: var(--line-height-leading-5, 20px);
+  font-weight: var(--weight-font-semibold, 600);
+  position: relative;
+}
