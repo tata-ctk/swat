@@ -84,6 +84,25 @@
       </div>
     </div>
   </div>
-  
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+<script>
+    // Konfigurasi Supabase
+    const supabaseUrl = "https://xwxpjfhwrnwtqxykflqi.supabase.co";
+    const supabaseAnonKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inh3eHBqZmh3cm53dHF4eWtmbHFpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Mzk4NTExMTksImV4cCI6MjA1NTQyNzExOX0.pkF4LxEFXdJYDOmAxOnHP7qJmScetjraHI8rLAN1pXA";
+
+    const supabase = supabase.createClient(supabaseUrl, supabaseAnonKey);
+
+    // Contoh: Fetch data dari Supabase
+    async function fetchData() {
+        let { data, error } = await supabase
+            .from("iot") // Ganti dengan nama tabel di Supabase
+            .select("*");
+
+        console.log(data, error);
+    }
+
+    fetchData();
+</script>
+
 </body>
 </html>
